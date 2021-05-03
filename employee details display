@@ -1,0 +1,27 @@
+*#include<iostream>
+using namespace std;
+struct emp{
+    int empid;
+    char name[20];
+void input()
+{
+    emp e;
+    cout<<"enter the details of employee"<<endl;
+    cin>>e.empid>>e.name;
+}
+void display()
+{
+    emp e;
+    cout<<"the details of employee are"<<endl;
+    cout<<e.empid<<endl<<e.name;
+}
+};
+int main()
+{
+    emp e;
+    for(int i=0;i<10;i++)
+    {
+    cout<<"details of employee is"<<endl;
+    e.input();
+    e.display();
+    }
